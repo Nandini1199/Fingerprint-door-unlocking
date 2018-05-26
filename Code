@@ -1,0 +1,32 @@
+#include<LiquidCrystal.h>
+#include<Servo.h>
+#include<SoftwareSerial.h>
+#include<Adafruit_Fingerprint.h>
+LiquidCrystal lcd(13,12,11,10,9,8);
+SoftwareSerial fp(2,3);
+Servo servo;
+Adafruit_Fingerprint finger_input=Adafruit_Fingerprint(&fp);
+unit8_t id;
+#define servoPin 5
+
+
+void setup() {
+  // put your setup code here, to run once:
+servo.attach(servoPin);
+servo.write(180);
+lcd.begin(16,2);
+lcd.print("Door is locked");
+delay(3000);
+lcd.clear();
+finger.begin(57600);
+Serial.begin(9600);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+lcd.setCursor(0,0);
+
+}
+
+//to enroll the fingerprint
