@@ -1,7 +1,7 @@
 #Fingerprint-door-unlocking
 This project aims at making a fingerprint door unlocking system. 
 Components used:
-	Arduino Uno, Fingerprint Module,Push Button,LEDs,Resistors,Power Supply,connecting wires,Cardboard Box,Servo Motor,16x2 LCD,bread Board.
+	Arduino Uno, Fingerprint Module,Push Button,LEDs,Resistors,Power Supply,connecting wires,Cardboard Box,Servo Motor,bread Board.
   
 Basic Working:
 1.	Take the fingerprint input from the user and store it as a template. 
@@ -13,10 +13,7 @@ Basic Working:
 7.	Else if the input does not match the template fingerprint, the door does not open and a message is displayed ‘Unauthorized access ’.
 
 PROGRESS:
-a)I have done all the research work required for this project.
-b)I couldn't work much on this last week as I went out of station.
-c)I have ordered fingerprint sensor which will come by monday. After which I will complete my hardware assembling.
-d)I have started writing the code.
+a)I have completed the project. The change that I made in my plan was to use serial monitor instead of the LCD display.
 
 PLAN:
 Firstly, I am  trying to make a basic code which will save the fingerprint as template and then check for the access evertim by comparing with the template.
